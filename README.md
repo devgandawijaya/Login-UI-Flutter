@@ -1,16 +1,5 @@
-# firstproject
+# Login UI Flutter
 
-A new Flutter project.
+Here's what the Flutter Login UI looks like
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![gambar](https://github.com/devgandawijaya/Login-UI-Flutter/assets/147145905/603e64a0-b6f8-4ac9-9fdb-a3ce3c0de842)
