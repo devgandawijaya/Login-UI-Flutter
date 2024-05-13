@@ -15,21 +15,21 @@ class _Repassword extends State<Repassword> {
         padding: EdgeInsets.all(50.0),
         children: <Widget>[
           Align(
-              child: GestureDetector(
-                onTap: () {
-                  // Action to perform on icon click
-                  print('Icon clicked');
-                  Navigator.of(context).pop(true);
-                },
-                child: Container(
-                  alignment: Alignment.centerRight,
-                  padding: EdgeInsets.all(0.0),
-                  child: Icon(
-                    Icons.close,
-                    size: 35.0,
-                  ),
+            child: GestureDetector(
+              onTap: () {
+                // Action to perform on icon click
+                print('Icon clicked');
+                Navigator.of(context).pop(true);
+              },
+              child: Container(
+                alignment: Alignment.centerRight,
+                padding: EdgeInsets.all(0.0),
+                child: Icon(
+                  Icons.close,
+                  size: 35.0,
                 ),
               ),
+            ),
           ), // Icon
           Padding(
             padding: EdgeInsets.fromLTRB(8, 50, 8, 0),
