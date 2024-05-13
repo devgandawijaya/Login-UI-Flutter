@@ -39,7 +39,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -50,13 +49,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   bool _obscureText = true;
   bool isChecked = false;
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: ListView(
         children: <Widget>[
@@ -116,10 +113,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     border: OutlineInputBorder(),
                     hintText: 'Enter your password',
                     suffixIcon: IconButton(
-                      icon: Icon(_obscureText ? Icons.visibility : Icons.visibility_off),
+                      icon: Icon(_obscureText
+                          ? Icons.visibility
+                          : Icons.visibility_off),
                       onPressed: () {
                         setState(() {
-                          _obscureText = !_obscureText; // Toggle password visibility
+                          _obscureText =
+                              !_obscureText; // Toggle password visibility
                         });
                       },
                     ),
@@ -138,7 +138,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     // Implementasi untuk melakukan navigasi ke halaman lupa kata sandi
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Repassword()),
+                      MaterialPageRoute(
+                          builder: (context) => const Repassword()),
                     );
                   },
                   child: const Text(
@@ -160,12 +161,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: null,
                 child: const Text('Log In'),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(Colors.blue), // Set background color
-                  minimumSize: MaterialStateProperty.all(Size(double.infinity, 0)), // Set minimumSize for width to be 100%
-                  foregroundColor: MaterialStateProperty.all<Color>(Colors.white), // Set text color
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.blue),
+                  // Set background color
+                  minimumSize:
+                      MaterialStateProperty.all(Size(double.infinity, 0)),
+                  // Set minimumSize for width to be 100%
+                  foregroundColor:
+                      MaterialStateProperty.all<Color>(Colors.white),
+                  // Set text color
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10), // Set border radius
+                      borderRadius:
+                          BorderRadius.circular(10), // Set border radius
                     ),
                   ),
                 ),
@@ -206,11 +214,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       // Aksi saat tombol pertama ditekan
                     },
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.white), // Set background color
-                      foregroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent), // Set text color
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                          Colors.white), // Set background color
+                      foregroundColor: MaterialStateProperty.all<Color>(
+                          Colors.blueAccent), // Set text color
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10), // Set border radius
+                          borderRadius:
+                              BorderRadius.circular(10), // Set border radius
                         ),
                       ),
                     ),
@@ -231,11 +242,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       // Aksi saat tombol kedua ditekan
                     },
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.white), // Set background color
-                      foregroundColor: MaterialStateProperty.all<Color>(Colors.blueAccent), // Set text color
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                          Colors.white), // Set background color
+                      foregroundColor: MaterialStateProperty.all<Color>(
+                          Colors.blueAccent), // Set text color
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10), // Set border radius
+                          borderRadius:
+                              BorderRadius.circular(10), // Set border radius
                         ),
                       ),
                     ),
@@ -255,7 +269,5 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
     );
-
-
   }
 }
